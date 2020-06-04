@@ -24,12 +24,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install lint and test
+    - name: npm install and audit
       run: |
         npm ci
-        npm lint
         npm audit
-        npm test
       env:
         CI: true
       working-directory: app
