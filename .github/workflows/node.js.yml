@@ -26,7 +26,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install and audit
       run: |
-        npm ci
+        npm i
         npm audit
       env:
         CI: true
