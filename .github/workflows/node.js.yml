@@ -42,5 +42,3 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build -t "$GITHUB_RTEPOSITORY:$IMAGE_TAG" .
-    
-    
